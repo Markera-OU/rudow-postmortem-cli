@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rudow-postmortem"
+version = "0.1.0"
+description = "Offline CLI that turns a log file into a Markdown incident timeline and post-mortem draft."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Markera" }]
+dependencies = []
+
+[project.scripts]
+rudow-postmortem = "rudow_postmortem.cli:main"
+
+[project.urls]
+Homepage = "https://rudow.ai"
+Repository = "https://github.com/Markera-OU/rudow-postmortem-cli"
+
+[tool.setuptools]
+packages = ["rudow_postmortem"]
